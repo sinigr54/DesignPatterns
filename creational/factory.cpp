@@ -46,6 +46,8 @@ public:
 };
 
 void creation_example2() {
+    Point::factory.cartesian(5.0f, 10.0f);
+
     DrinkDirector director;
     auto drink = director.makeDrink("tea");
 
