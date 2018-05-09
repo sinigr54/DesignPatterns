@@ -1,23 +1,7 @@
-#include <iostream>
-#include "solid/solid.h"
-#include "creational/HtmlElement.h"
-#include "creational/creational.h"
-
-#include <string>
-#include <utility>
-#include <ostream>
-
-using namespace std;
+#include "structural/structural.h"
 
 int main() {
-    auto element = HtmlElement::Builder("ul")
-            .addChild("li", "hello")
-            .addChild("li", "world")
-            .build();
-
-    std::cout << element.toString() << std::endl;
-
-    creation_example4();
+    structural_example8();
 
     return 0;
 }
