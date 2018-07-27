@@ -15,11 +15,11 @@
 
 using namespace std;
 
-class DrinkDirector {
+class DrinkFactory {
     unordered_map<string, unique_ptr<HotDrinkFactory>> drinkFactories;
 
 public:
-    DrinkDirector() {
+    DrinkFactory() {
         drinkFactories["tea"] = make_unique<TeaFactory>();
         drinkFactories["coffee"] = make_unique<CoffeeFactory>();
     }

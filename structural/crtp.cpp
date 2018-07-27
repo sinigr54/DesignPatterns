@@ -62,7 +62,7 @@ struct Neuron : SomeNeurons<Neuron> {
 };
 
 /*
- * Do not inherit STL classes, because they do not have virtual constructor.
+ * Do not inherit STL classes, because they do not have virtual destructor.
  * This is only example CRTP
  * */
 struct NeuronLayer : public vector<Neuron>, SomeNeurons<NeuronLayer> {

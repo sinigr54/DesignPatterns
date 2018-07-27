@@ -10,7 +10,7 @@
 
 #include "creational.h"
 
-#include "DrinkDirector.h"
+#include "DrinkFactory.h"
 
 // Factory Example
 
@@ -48,7 +48,7 @@ public:
 void creation_example2() {
     Point::factory.cartesian(5.0f, 10.0f);
 
-    DrinkDirector director;
+    DrinkFactory director;
     auto drink = director.makeDrink("tea");
 
     DrinkFactoryWithVolume directorWithVolume;

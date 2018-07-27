@@ -1,7 +1,11 @@
 #include "structural/structural.h"
+#include "creational/creational.h"
+#include "behavioral/behavioral.h"
+
+#include <iostream>
 
 int main() {
-    structural_example8();
+    behavioral_example3();
 
     return 0;
 }

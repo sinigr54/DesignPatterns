@@ -70,6 +70,8 @@ int Foo::count = 0;
 
 struct Bar {
     std::shared_ptr<IFoo> foo;
+
+
 };
 
 void creation_example4() {

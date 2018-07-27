@@ -67,10 +67,6 @@ struct Circle : Shape {
 };
 
 void structural_example2() {
-    Person p{"Sasha"};
-
-    p.greet();
-
     RasterRenderer rasterRenderer;
     VectorRenderer vectorRenderer;
 

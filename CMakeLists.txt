@@ -27,8 +27,8 @@ add_executable(DesignPatterns
         creational/factory.cpp
         creational/HotDrink.h
         creational/HotDrinkFactory.h
-        creational/DrinkDirector.h
+        creational/DrinkFactory.h
         creational/prototype.cpp
-        creational/singleton.cpp structural/structural.h structural/adapter.cpp structural/bridge.cpp structural/Person.cpp structural/Person.h structural/composite.cpp structural/crtp.cpp structural/decorator.cpp structural/functional_decorator.cpp structural/excercise.cpp structural/flyweight_boost.cpp structural/flyweight_text.cpp)
+        creational/singleton.cpp structural/structural.h structural/adapter.cpp structural/bridge.cpp structural/Person.cpp structural/Person.h structural/composite.cpp structural/crtp.cpp structural/decorator.cpp structural/functional_decorator.cpp structural/excercise.cpp structural/flyweight_boost.cpp structural/flyweight_text.cpp behavioral/behavioral.h behavioral/chain_of_responsibility.cpp behavioral/command.cpp behavioral/interpreter.cpp)
 
 target_link_libraries(DesignPatterns ${Boost_LIBRARIES})
