@@ -3,9 +3,12 @@
 #include "behavioral/behavioral.h"
 
 #include <iostream>
+#include <vector>
+
+#include <string>
 
 int main() {
-    behavioral_example3();
+    interpreter_exercise();
 
     return 0;
 }
