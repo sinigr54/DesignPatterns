@@ -13,4 +13,8 @@ void behavioral_example3();
 
 void interpreter_exercise();
 
+void behavioral_example4();
+
+void behavioral_example5();
+
 #endif //DESIGNPATTERNS_BEHAVIORAL_H
