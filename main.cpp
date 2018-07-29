@@ -8,7 +8,7 @@
 #include <string>
 
 int main() {
-    interpreter_exercise();
+    behavioral_example5();
 
     return 0;
 }
