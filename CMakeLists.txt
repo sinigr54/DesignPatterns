@@ -29,6 +29,6 @@ add_executable(DesignPatterns
         creational/HotDrinkFactory.h
         creational/DrinkFactory.h
         creational/prototype.cpp
-        creational/singleton.cpp structural/structural.h structural/adapter.cpp structural/bridge.cpp structural/Person.cpp structural/Person.h structural/composite.cpp structural/crtp.cpp structural/decorator.cpp structural/functional_decorator.cpp structural/excercise.cpp structural/flyweight_boost.cpp structural/flyweight_text.cpp behavioral/behavioral.h behavioral/chain_of_responsibility.cpp behavioral/command.cpp behavioral/interpreter.cpp behavioral/interpreter_exercise.cpp behavioral/iterator.cpp behavioral/mediator.cpp behavioral/User.cpp behavioral/User.h behavioral/ChatRoom.cpp behavioral/ChatRoom.h)
+        creational/singleton.cpp structural/structural.h structural/adapter.cpp structural/bridge.cpp structural/Person.cpp structural/Person.h structural/composite.cpp structural/crtp.cpp structural/decorator.cpp structural/functional_decorator.cpp structural/excercise.cpp structural/flyweight_boost.cpp structural/flyweight_text.cpp behavioral/behavioral.h behavioral/chain_of_responsibility.cpp behavioral/command.cpp behavioral/interpreter.cpp behavioral/interpreter_exercise.cpp behavioral/iterator.cpp behavioral/mediator.cpp behavioral/User.cpp behavioral/User.h behavioral/ChatRoom.cpp behavioral/ChatRoom.h behavioral/memento.cpp behavioral/simple_observer.cpp behavioral/complicated_observer.cpp behavioral/Observer.h behavioral/Observable.h)
 
 target_link_libraries(DesignPatterns ${Boost_LIBRARIES})
