@@ -3,7 +3,7 @@
 #include "behavioral/behavioral.h"
 
 int main() {
-    behavioral_example8();
+    behavioral_example9();
 
     return 0;
 }

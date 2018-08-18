@@ -58,6 +58,6 @@ add_executable(DesignPatterns
         behavioral/complicated_observer.cpp
         behavioral/Observer.h
         behavioral/Observable.h
-        )
+        behavioral/state.cpp)
 
 target_link_libraries(DesignPatterns ${Boost_LIBRARIES})
