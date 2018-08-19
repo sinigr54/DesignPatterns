@@ -25,4 +25,6 @@ void behavioral_example8();
 
 void behavioral_example9();
 
+void behavioral_example10();
+
 #endif //DESIGNPATTERNS_BEHAVIORAL_H
