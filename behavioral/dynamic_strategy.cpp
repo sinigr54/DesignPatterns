@@ -12,7 +12,7 @@
 
 using namespace std;
 
-namespace DynamicStrategy {
+namespace Strategy {
 
   enum class OutputFormat {
       markdown,
@@ -47,7 +47,7 @@ namespace DynamicStrategy {
       }
   };
 
-  class TextProcessor {
+  class DynamicTextProcessor {
   public:
       void clean() {
           oss.clear();
@@ -81,18 +81,40 @@ namespace DynamicStrategy {
       unique_ptr<PrintListStrategy> printListStrategy;
   };
 
+  template <typename PLS>
+  class StaticTextProcessor {
+  public:
+      void clean() {
+          oss.clear();
+      }
+
+      void appendList(const vector<string> &items) {
+          printListStrategy.start(oss);
+          for (const auto &item : items) {
+              printListStrategy.addItem(oss, item);
+          }
+          printListStrategy.end(oss);
+      }
+
+      string str() const {
+          return oss.str();
+      }
+
+  private:
+      ostringstream oss;
+      PLS printListStrategy;
+  };
+
 }
 
 void behavioral_example10() {
-    DynamicStrategy::TextProcessor textProcessor;
+    Strategy::DynamicTextProcessor textProcessor;
 
-    textProcessor.setOutputFormat(DynamicStrategy::OutputFormat::markdown);
+    textProcessor.setOutputFormat(Strategy::OutputFormat::markdown);
     textProcessor.appendList({"foo", "bar", "biz"});
     cout << textProcessor.str() << "\n";
 
-    textProcessor.clean();
-
-    textProcessor.setOutputFormat(DynamicStrategy::OutputFormat::html);
-    textProcessor.appendList({"foo", "bar", "biz"});
-    cout << textProcessor.str() << "\n";
+    Strategy::StaticTextProcessor<Strategy::HtmlPrintListStrategy> staticTextProcessor;
+    staticTextProcessor.appendList({"foo", "bar", "biz"});
+    cout << staticTextProcessor.str() << "\n";
 }
