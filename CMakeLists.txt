@@ -58,6 +58,9 @@ add_executable(DesignPatterns
         behavioral/complicated_observer.cpp
         behavioral/Observer.h
         behavioral/Observable.h
-        behavioral/state.cpp behavioral/dynamic_strategy.cpp)
+        behavioral/state.cpp
+        behavioral/dynamic_strategy.cpp
+        behavioral/strategy_exercise.cpp
+        behavioral/template_method_exercise.cpp behavioral/intrusive_visitor.cpp behavioral/reflective_visitor.cpp behavioral/classic_visitor.cpp)
 
 target_link_libraries(DesignPatterns ${Boost_LIBRARIES})

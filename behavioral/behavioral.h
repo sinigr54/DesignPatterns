@@ -27,4 +27,14 @@ void behavioral_example9();
 
 void behavioral_example10();
 
+void strategy_exercise();
+
+void template_method_exercise();
+
+void intrusive_visitor_example();
+
+void reflective_visitor_example();
+
+void classic_visitor_example();
+
 #endif //DESIGNPATTERNS_BEHAVIORAL_H
